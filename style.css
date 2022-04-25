@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro:wght@200&family=Titillium+Web:wght@200&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-family: 'Poppins', sans-serif;
+}
+@media(min-width:1300px){
+	.container{
+	max-width: 1400px;
+	}	
+}
+li{
+	list-style-type: none;
+}
+/*header*/
+header{
+	width: 1640px;
+}
+.header-top{
+	height: 59px;
+	background: #1e1e1e;
+	text-transform: uppercase;
+	text-align: center;
+}
+.header-bottom{
+	text-transform: capitalize;
+}
+.header-bottom img{
+	margin-right: 16px;
+}
+.header-bottom li{
+	padding-left: 34px;
+}
+/*men*/
+.men{
+	background-image:url('img/Rectangle 4 copy 3.png');
+	width: 100%;
+	height: 411px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	z-index:1;
+}
+.men h2{
+	font-size: 59.75px;
+}
+.men h4{
+	font-size: 13.94px;
+}
+/*home*/
+.home{
+	padding-top: 43px;
+}
+.home .col-lg-3 h6{
+	text-transform: uppercase;
+	padding-bottom: 16px;
+}
+.home .col-lg-3 li{
+	padding-bottom: 29px;
+}
+.home .col-lg-3 .size button{
+	width: 40px;
+	margin-right: 10px;
+}
+.home .col-lg-3 .tags button{
+	margin: 32px 9px 40px 0;
+}
+.home .col-lg-3 button:hover{
+	background: #48c8fd;
+}
+.home .col-lg-3 li:hover{
+	color: #48c8fd;
+}
+.home ul{
+	padding-left: 0;
+}
+.home .col-lg-9 .row{
+	padding-bottom: 39px;
+}
+.home .col-lg-3 p, .home .col-lg-9 p{
+	opacity: 0.5;
+}
+.home .col-lg-9{
+	width: 320px;
+}
+.home .img-center{
+	margin: 0 40px;
+}
+.home .col-lg-9 h5{
+	text-transform: uppercase;
+}
+/*footer*/
+footer{
+	background: #161616;
+	color: #fff;
+}
+footer li{
+	opacity: 0.5;
+}
+footer .up{
+	text-transform: uppercase;
+}
+footer h6{
+	padding: 70px 0 22px 0;
+}
+footer h5{
+	padding-bottom: 16px;
+}
+footer p{
+	padding-bottom: 21px;
+	text-transform: capitalize;
+	opacity: 0.5;
+}
+footer .row-bottom{
+	height: 76px;
+}
+footer .footer-icon i{
+	padding: 15px;
+	margin: 31px 14px 0 0;
+	background: #222222;
+}
+footer .sign-up{
+	font-size: 12px;
+}
+footer .footer-bor{
+	border: 1px solid #48c8fd;
+}
