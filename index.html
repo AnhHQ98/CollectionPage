@@ -3,11 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style.css">
+		
 		<!--link rel bootstrap-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<!-- link fontawesome -->
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		<!--link rel slick-->
-		
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<!-- link css -->
+		<link href="style.css" rel="stylesheet">
+		<!-- link responsive -->
+		<link href="responsive.css" rel="stylesheet">
 		<title>CollectionPage</title>
 	</head>
 	<body>
@@ -20,13 +26,16 @@
 						</div>
 					</div>
 				</div>
-				<div class="header-bottom navbar navbar-expand">
-					<div class="container-fluid">
+				<div class="header-bottom navbar navbar-expand-lg">
+					<div class="container">
 						<div class="navbar-brand d-flex">
 							<img src="img/Vector-Smart-Object.png" alt="logo">
 							<h3>eveland</h3>
 						</div>
-						<div class="collapse navbar-collapse justify-content-end">
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 							<ul class="navbar-nav">
 								<li class="nav-item">
 									<a class="nav-link text-black" href="#">home</a>
@@ -43,7 +52,7 @@
 								<li class="nav-item">
 									<a class="nav-link text-black" href="#">mobile demo</a>
 								</li>
-								<li>
+								<li class="nav-item-svg-1">
 									<svg 
 										xmlns="http://www.w3.org/2000/svg"
 										xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -52,7 +61,7 @@
 										d="M24.860,25.168 L17.577,17.582 C19.434,15.716 20.585,13.144 20.585,10.308 C20.585,4.623 15.968,-0.001 10.292,-0.001 C4.616,-0.001 -0.001,4.623 -0.001,10.308 C-0.001,15.992 4.616,20.616 10.292,20.616 C12.783,20.616 15.070,19.724 16.852,18.244 L24.153,25.848 C24.249,25.949 24.377,25.999 24.506,25.999 C24.629,25.999 24.751,25.953 24.846,25.862 C25.041,25.674 25.047,25.363 24.860,25.168 ZM10.292,19.634 C5.157,19.634 0.979,15.450 0.979,10.308 C0.979,5.165 5.157,0.981 10.292,0.981 C15.427,0.981 19.605,5.165 19.605,10.308 C19.605,15.450 15.427,19.634 10.292,19.634 Z"/>
 									</svg>
 								</li>
-								<li>
+								<li class="nav-item-svg-1">
 									<svg 
 										xmlns="http://www.w3.org/2000/svg"
 										xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -61,17 +70,44 @@
 										d="M27.000,13.501 C27.000,6.061 20.938,-0.001 13.498,-0.001 C6.059,-0.001 -0.000,6.061 -0.000,13.501 C-0.000,17.598 1.859,21.285 4.751,23.762 C4.786,23.798 4.821,23.832 4.888,23.864 C7.229,25.829 10.227,26.999 13.533,26.999 C16.770,26.999 19.768,25.829 22.108,23.935 C22.245,23.899 22.350,23.798 22.418,23.692 C25.211,21.180 27.000,17.563 27.000,13.501 ZM1.240,13.501 C1.240,6.749 6.751,1.239 13.501,1.239 C20.252,1.239 25.763,6.749 25.763,13.501 C25.763,16.807 24.455,19.801 22.319,22.009 C21.974,20.389 20.941,17.634 17.771,15.844 C18.495,14.948 18.907,13.778 18.907,12.537 C18.907,9.575 16.496,7.165 13.533,7.165 C10.571,7.165 8.160,9.575 8.160,12.537 C8.160,13.778 8.607,14.913 9.295,15.844 C6.097,17.634 5.064,20.389 4.755,22.009 C2.583,19.837 1.240,16.807 1.240,13.501 ZM9.369,12.569 C9.369,10.296 11.228,8.437 13.501,8.437 C15.775,8.437 17.634,10.296 17.634,12.569 C17.634,14.843 15.775,16.702 13.501,16.702 C11.228,16.702 9.369,14.843 9.369,12.569 ZM5.855,23.074 C5.925,22.075 6.473,18.699 10.195,16.804 C11.126,17.529 12.261,17.940 13.501,17.940 C14.742,17.940 15.912,17.493 16.843,16.769 C20.530,18.664 21.113,21.970 21.218,23.038 C19.117,24.726 16.432,25.759 13.540,25.759 C10.609,25.762 7.956,24.764 5.855,23.074 Z"/>
 									</svg>
 								</li>
-								<li>
+								<li class="nav-item-svg-1">
 									<svg class="position-relative" aria-hidden="true"
 										xmlns="http://www.w3.org/2000/svg"
 										xmlns:xlink="http://www.w3.org/1999/xlink"
 										width="27px" height="27px">
 										<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
 										d="M13.792,6.371 L27.006,6.371 L24.139,19.536 L10.457,19.536 L3.853,1.145 L-0.006,1.145 L-0.006,-0.008 L4.668,-0.008 L11.278,18.444 L23.208,18.444 L25.600,7.462 L13.792,7.462 L13.792,6.371 ZM13.147,21.029 C14.784,21.029 16.129,22.352 16.129,24.017 C16.129,25.682 14.784,27.006 13.147,27.006 C11.510,27.006 10.165,25.682 10.165,24.017 C10.165,22.352 11.510,21.029 13.147,21.029 ZM13.147,25.859 C14.200,25.859 15.016,25.053 15.016,24.017 C15.016,23.036 14.200,22.176 13.147,22.176 C12.155,22.176 11.278,22.982 11.278,24.017 C11.278,24.999 12.094,25.859 13.147,25.859 ZM21.626,21.029 C23.263,21.029 24.608,22.352 24.608,24.017 C24.608,25.682 23.263,27.006 21.626,27.006 C19.988,27.006 18.643,25.682 18.643,24.017 C18.643,22.352 19.988,21.029 21.626,21.029 ZM21.626,25.859 C22.679,25.859 23.494,25.053 23.494,24.017 C23.494,23.036 22.679,22.176 21.626,22.176 C20.633,22.176 19.812,22.982 19.757,24.017 C19.757,24.999 20.573,25.859 21.626,25.859 Z"/>
-										<span class="position-absolute translate-middle badge rounded-pill bg-secondary">0
+										<span class="position-absolute translate-middle badge rounded-pill bg-dark">0
 											<span class="visually-hidden"></span>
 										</span>
 									</svg>
+								</li>
+								<li class="nav-item-svg-2">
+									<svg 
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="25px" height="26px">
+										<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+										d="M24.860,25.168 L17.577,17.582 C19.434,15.716 20.585,13.144 20.585,10.308 C20.585,4.623 15.968,-0.001 10.292,-0.001 C4.616,-0.001 -0.001,4.623 -0.001,10.308 C-0.001,15.992 4.616,20.616 10.292,20.616 C12.783,20.616 15.070,19.724 16.852,18.244 L24.153,25.848 C24.249,25.949 24.377,25.999 24.506,25.999 C24.629,25.999 24.751,25.953 24.846,25.862 C25.041,25.674 25.047,25.363 24.860,25.168 ZM10.292,19.634 C5.157,19.634 0.979,15.450 0.979,10.308 C0.979,5.165 5.157,0.981 10.292,0.981 C15.427,0.981 19.605,5.165 19.605,10.308 C19.605,15.450 15.427,19.634 10.292,19.634 Z"/>
+									</svg>
+									<svg 
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="27px" height="27px">
+										<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+										d="M27.000,13.501 C27.000,6.061 20.938,-0.001 13.498,-0.001 C6.059,-0.001 -0.000,6.061 -0.000,13.501 C-0.000,17.598 1.859,21.285 4.751,23.762 C4.786,23.798 4.821,23.832 4.888,23.864 C7.229,25.829 10.227,26.999 13.533,26.999 C16.770,26.999 19.768,25.829 22.108,23.935 C22.245,23.899 22.350,23.798 22.418,23.692 C25.211,21.180 27.000,17.563 27.000,13.501 ZM1.240,13.501 C1.240,6.749 6.751,1.239 13.501,1.239 C20.252,1.239 25.763,6.749 25.763,13.501 C25.763,16.807 24.455,19.801 22.319,22.009 C21.974,20.389 20.941,17.634 17.771,15.844 C18.495,14.948 18.907,13.778 18.907,12.537 C18.907,9.575 16.496,7.165 13.533,7.165 C10.571,7.165 8.160,9.575 8.160,12.537 C8.160,13.778 8.607,14.913 9.295,15.844 C6.097,17.634 5.064,20.389 4.755,22.009 C2.583,19.837 1.240,16.807 1.240,13.501 ZM9.369,12.569 C9.369,10.296 11.228,8.437 13.501,8.437 C15.775,8.437 17.634,10.296 17.634,12.569 C17.634,14.843 15.775,16.702 13.501,16.702 C11.228,16.702 9.369,14.843 9.369,12.569 ZM5.855,23.074 C5.925,22.075 6.473,18.699 10.195,16.804 C11.126,17.529 12.261,17.940 13.501,17.940 C14.742,17.940 15.912,17.493 16.843,16.769 C20.530,18.664 21.113,21.970 21.218,23.038 C19.117,24.726 16.432,25.759 13.540,25.759 C10.609,25.762 7.956,24.764 5.855,23.074 Z"/>
+									</svg>
+									<svg class="position-relative" aria-hidden="true"
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										width="27px" height="27px">
+										<path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
+										d="M13.792,6.371 L27.006,6.371 L24.139,19.536 L10.457,19.536 L3.853,1.145 L-0.006,1.145 L-0.006,-0.008 L4.668,-0.008 L11.278,18.444 L23.208,18.444 L25.600,7.462 L13.792,7.462 L13.792,6.371 ZM13.147,21.029 C14.784,21.029 16.129,22.352 16.129,24.017 C16.129,25.682 14.784,27.006 13.147,27.006 C11.510,27.006 10.165,25.682 10.165,24.017 C10.165,22.352 11.510,21.029 13.147,21.029 ZM13.147,25.859 C14.200,25.859 15.016,25.053 15.016,24.017 C15.016,23.036 14.200,22.176 13.147,22.176 C12.155,22.176 11.278,22.982 11.278,24.017 C11.278,24.999 12.094,25.859 13.147,25.859 ZM21.626,21.029 C23.263,21.029 24.608,22.352 24.608,24.017 C24.608,25.682 23.263,27.006 21.626,27.006 C19.988,27.006 18.643,25.682 18.643,24.017 C18.643,22.352 19.988,21.029 21.626,21.029 ZM21.626,25.859 C22.679,25.859 23.494,25.053 23.494,24.017 C23.494,23.036 22.679,22.176 21.626,22.176 C20.633,22.176 19.812,22.982 19.757,24.017 C19.757,24.999 20.573,25.859 21.626,25.859 Z"/>
+										
+									</svg>
+									<span class="position-absolute translate-middle badge rounded-pill bg-dark">0
+										<span class="visually-hidden"></span>
+									</span>
 								</li>
 							</ul>
 						</div>
@@ -141,44 +177,43 @@
 							</li>
 						</ul>
 						<div>
-							<h5 class="fw-bold text-uppercase">color
-							</h5>
+							<h5 class="fw-bold text-uppercase">color</h5>
 							<hr>
 						</div>
 						<div>
 							<div class="d-flex">	
 								<div class="form-check input-1">
-									<input class="form-check-input" type="radio" id="flexRadioDefault1">
+									<input class="form-check-input shadow-none" type="radio" id="flexRadioDefault1">
 									<label class="form-check-label" for="flexRadioDefault1">
 									</label>
 								</div>
 								<div class="form-check input-2">
-									<input class="form-check-input" type="radio" id="flexRadioDefault2">
+									<input class="form-check-input shadow-none" type="radio" id="flexRadioDefault2">
 									<label class="form-check-label" for="flexRadioDefault2">
 									</label>
 								</div>
 								<div class="form-check input-3">
-									<input class="form-check-input" type="radio" id="flexRadioDefault3">
+									<input class="form-check-input shadow-none" type="radio" id="flexRadioDefault3">
 									<label class="form-check-label" for="flexRadioDefault3"></label>
 								</div>
 								<div class="form-check input-4">
-									<input class="form-check-input" type="radio" id="flexRadioDefault4">
+									<input class="form-check-input shadow-none" type="radio" id="flexRadioDefault4">
 									<label class="form-check-label" for="flexRadioDefault4"></label>
 								</div>
 								<div class="form-check input-5">
-									<input class="form-check-input" type="radio" id="flexRadioDefault5">
+									<input class="form-check-input shadow-none" type="radio" id="flexRadioDefault5">
 									<label class="form-check-label" for="flexRadioDefault5"></label>
 								</div>
 								<div class="form-check input-6">
-									<input class="form-check-input" type="radio" id="flexRadioDefault6">
+									<input class="form-check-input shadow-none" type="radio" id="flexRadioDefault6">
 									<label class="form-check-label" for="flexRadioDefault6"></label>
 								</div>
 								<div class="form-check input-7">
-									<input class="form-check-input" type="radio" id="flexRadioDefault7">
+									<input class="form-check-input shadow-none" type="radio" id="flexRadioDefault7">
 									<label class="form-check-label" for="flexRadioDefault7"></label>
 								</div>
 								<div class="fomr-check input-8">
-									<input class="form-check-input" type="radio" id="flexRadioDefault8">
+									<input class="form-check-input shadow-none" type="radio" id="flexRadioDefault8">
 									<label class="form-check-label" for="flexRadioDefault8"></label>
 								</div>
 							</div>
@@ -190,27 +225,25 @@
 						</div>
 						<div>
 							<div>
-								<button type="button" class="btn btn-outline-secondary">M</button>
-								<button type="button" class="btn btn-outline-secondary">L</button>
-								<button type="button" class="btn btn-outline-secondary">X</button>
-								<button type="button" class="btn btn-outline-secondary">XL</button>
+								<button type="button" class="btn btn-outline-secondary p-0 rounded-0 btn-size">M</button>
+								<button type="button" class="btn btn-outline-secondary p-0 rounded-0 btn-size">L</button>
+								<button type="button" class="btn btn-outline-secondary p-0 rounded-0 btn-size">X</button>
+								<button type="button" class="btn btn-outline-secondary p-0 rounded-0 btn-size text-center ">XL</button>
 							</div>
 						</div>
 						<div class="pt-3">
-							<h5 class="fw-bold text-uppercase">price range
-							</h5>
+							<h5 class="fw-bold text-uppercase">price range</h5>
 							<hr>
 						</div>
 						<div>
 							<div>
 								<label for="customRange2" class="form-label"></label>
-								<input type="range" class="form-range" min="0" max="3450" id="customRange2">
+								<input type="range" min="0" max="3450" id="customRange2">
 							</div>
 							<p>Price: $30 - $3450</p>
 						</div>
 						<div class="tags">
-							<h5 class="fw-bold text-uppercase">tag
-							</h5>
+							<h5 class="fw-bold text-uppercase">tag</h5>
 							<hr>
 						</div>
 						<div>
@@ -220,38 +253,92 @@
 								<button type="button" class="btn btn-outline-secondary">Sale</button>
 							</div>
 						</div>
-						<img src="img/3427204687_1_1_1.png" style="width:320px" alt="spring">
+						<img src="img/3427204687_1_1_1.png" alt="spring">
 					</div>
 					<div class="col-lg-9">
 						<div class="top-img justify-content-between">
-							<img src="img/SALE-UP-TO-30.png" alt="sale">
+							<img class="img-fluid" src="img/SALE-UP-TO-30.png" alt="sale">
 						</div>
-						<div class="row-img d-flex">
+						<div class="row-img-1 d-flex">
 							<div>
-								<img src="img/mzz59802_indigo_xl.png" alt="outwear">
+								<img class="img-fluid" src="img/mzz59802_indigo_xl.png" alt="outwear">
 								<h5 class="text-center fw-bold">outwear</h5>
 							</div>
 							<div class="img-center">
-								<img src="img/mzz56693_grey_xl.png" style="width:320px" alt="hoodies">
+								<img class="img-fluid" src="img/mzz56693_grey_xl.png" alt="hoodies">
 								<h5 class="text-center fw-bold">hoodies & sweatshirts</h5>
 							</div>
 							<div>
-								<img src="img/mzz66036_grey_xl.png" style="width:320px" alt="sweatpants">
+								<img class="img-fluid" src="img/mzz66036_grey_xl.png" alt="sweatpants">
+								<h5 class="text-center fw-bold">sweatpants</h5>
+							</div>
+							<div>
+								<img class="img-fluid" src="img/mzz59802_indigo_xl.png" alt="outwear">
+								<h5 class="text-center fw-bold">outwear</h5>
+							</div>
+							<div class="img-center">
+								<img class="img-fluid" src="img/mzz56693_grey_xl.png" alt="hoodies">
+								<h5 class="text-center fw-bold">hoodies & sweatshirts</h5>
+							</div>
+							<div>
+								<img class="img-fluid" src="img/mzz66036_grey_xl.png" alt="sweatpants">
+								<h5 class="text-center fw-bold">sweatpants</h5>
+							</div>
+							<div>
+								<img class="img-fluid" src="img/mzz59802_indigo_xl.png" alt="outwear">
+								<h5 class="text-center fw-bold">outwear</h5>
+							</div>
+							<div class="img-center">
+								<img class="img-fluid" src="img/mzz56693_grey_xl.png" alt="hoodies">
+								<h5 class="text-center fw-bold">hoodies & sweatshirts</h5>
+							</div>
+							<div>
+								<img class="img-fluid" src="img/mzz66036_grey_xl.png" alt="sweatpants">
 								<h5 class="text-center fw-bold">sweatpants</h5>
 							</div>
 						</div>
-						<div class="d-flex">
-							<div>
-								<h3 class="fw-bold">Bestseller</h3>
-							</div>	
+						<!-- bestseller -->
+						<div class="d-flex justify-content-between bestseller">
+							<h3 class="fw-bold">Bestseller</h3>
+							<a class="text-decoration-none text-dark" href="#">Shop all <i class="fa fa-angle-right" aria-hidden="true"></i></a>		
 						</div>
-						<div class="row-img d-flex">
+						<div class="row-img-2 d-flex">
 							<div>
 								<img src="img/27560_2295eae516-h409730933.png" alt="shirt">
 								<h6>Pour Over Kettle in Black</h6>
 								<p>$320.00</p>
 							</div>
-							<div class="img-center">
+							<div>
+								<img src="img/27644_71d1221b91-h41015520a.png" alt="beanie">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27782_5288cc9be0-h410267743_alt2.png" alt="cap">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27560_2295eae516-h409730933.png" alt="shirt">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27644_71d1221b91-h41015520a.png" alt="beanie">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27782_5288cc9be0-h410267743_alt2.png" alt="cap">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27560_2295eae516-h409730933.png" alt="shirt">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
 								<img src="img/27644_71d1221b91-h41015520a.png" alt="beanie">
 								<h6>Pour Over Kettle in Black</h6>
 								<p>$320.00</p>
@@ -262,28 +349,68 @@
 								<p>$320.00</p>
 							</div>
 						</div>
-						<div>
-							<h3 class="fw-bold">Men</h3>
-							<div class="mb-5 d-flex">
-								<h4 class="text-uppercase">filter</h4>
-								<div class="dropdown">
-									<button class="btn btn-outline-secondary dropdown-toggle rounded-pill" type="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Popularity
-									</button>
-									<ul class="dropdown-menu" aria-labelledby="dropdown">
-										<li><a class="dropdown-item" href="#"></a></li>
-										<li><a class="dropdown-item" href="#"></a></li>
-										<li><a class="dropdown-item" href="#"></a></li>
-									</ul>
+						<!-- men-2 -->
+						<div class="men-2">
+							<h3 class="fw-bold pb-5">Men</h3>
+							<div class="d-flex justify-content-between">
+								<div class="mb-5 d-flex">
+									<h4 class="text-uppercase">filter</h4>
+									<div class="dropdown">
+										<button class="btn btn-outline-secondary dropdown-toggle rounded-pill" type="button" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Popularity</button>
+										<ul class="dropdown-menu" aria-labelledby="dropdown">
+											<li><a class="dropdown-item" href="#"></a></li>
+											<li><a class="dropdown-item" href="#"></a></li>
+											<li><a class="dropdown-item" href="#"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<img src="img/Rectangle-12-copy-2.png" alt="anh ben trai">
+									<img class="ms-4" src="img/Rectangle-11-copy-2.png" alt="anh ben phai">
+									<button type="button" class="btn btn-outline-secondary rounded-pill ms-4">3</button>
+									<button type="button" class="btn btn-outline-secondary rounded-pill ms-2">4</button>
+									<button type="button" class="btn btn-outline-secondary rounded-pill ms-2">5</button>
+									<button type="button" class="btn btn-outline-secondary rounded-pill ms-2">6</button>
 								</div>
 							</div>
 						</div>
-						<div class="row-img d-flex">
+						<div class="row-img-3 d-flex">
 							<div>
 								<img class="red-cap" src="img/27785_ab0ec4f593-h41026848g_alt2.png" style="width:320;height:390;" alt="red cap">
 								<h6>Pour Over Kettle in Black</h6>
 								<p>$320.00</p>
 							</div>
-							<div class="img-center">
+							<div>
+								<img src="img/27896_c724c4d428-h410190108.png" alt="shitr">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27553_e110188e70-h409607999.png" alt="balo">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img class="red-cap" src="img/27785_ab0ec4f593-h41026848g_alt2.png" style="width:320;height:390;" alt="red cap">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27896_c724c4d428-h410190108.png" alt="shitr">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27553_e110188e70-h409607999.png" alt="balo">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img class="red-cap" src="img/27785_ab0ec4f593-h41026848g_alt2.png" style="width:320;height:390;" alt="red cap">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
 								<img src="img/27896_c724c4d428-h410190108.png" alt="shitr">
 								<h6>Pour Over Kettle in Black</h6>
 								<p>$320.00</p>
@@ -294,13 +421,43 @@
 								<p>$320.00</p>
 							</div>
 						</div>
-						<div class="row-img d-flex">
+						<div class="row-img-4 d-flex mt-5">
 							<div>
 								<img src="img/27560_2295eae516-h409730933.png" alt="shirt">
 								<h6>Pour Over Kettle in Black</h6>
 								<p>$320.00</p>
 							</div>
-							<div class="img-center">
+							<div>
+								<img src="img/27644_71d1221b91-h41015520a.png" alt="yellow beanie">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27782_5288cc9be0-h410267743_alt2.png" alt="cap">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27560_2295eae516-h409730933.png" alt="shirt">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27644_71d1221b91-h41015520a.png" alt="yellow beanie">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27782_5288cc9be0-h410267743_alt2.png" alt="cap">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
+								<img src="img/27560_2295eae516-h409730933.png" alt="shirt">
+								<h6>Pour Over Kettle in Black</h6>
+								<p>$320.00</p>
+							</div>
+							<div>
 								<img src="img/27644_71d1221b91-h41015520a.png" alt="yellow beanie">
 								<h6>Pour Over Kettle in Black</h6>
 								<p>$320.00</p>
@@ -311,32 +468,33 @@
 								<p>$320.00</p>
 							</div>
 						</div>
+						<nav class="Page-navigation-example nav-end">
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+									<a class="page-link" href="#">1</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">2</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="">3</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<i class="fa fa-angle-right" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
-					<nav class="Page-navigation-example nav-end">
-						<ul class="pagination justify-content-center">
-							<li class="page-item">
-								<a class="page-link" href="#">1</a>
-							</li>
-							<li class="page-item">
-								<a class="page-link" href="#">2</a>
-							</li>
-							<li class="page-item">
-								<a class="page-link" href="">3</a>
-							</li>
-							<li class="page-item">
-								<a class="page-link" href="#" aria-label="Next">
-									<i class="fa fa-angle-right" aria-hidden="true"></i>
-								</a>
-							</li>
-						</ul>
-					</nav>
+					
 				</div>
 			</div>
 		</section>
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-3">
+					<div class="col-lg-3">
 						<h6 class="up">
 							<a class="text-decoration-none text-white" href="#">help & information</a>
 						</h6>
@@ -354,7 +512,7 @@
 							<a class="text-decoration-none text-white" href="#">10% student discount</a>
 						</p>
 					</div>
-					<div class="col-3">
+					<div class="col-lg-3">
 						<h6 class="up">
 							<a class="text-decoration-none text-white" href="#">about us</a>
 						</h6>
@@ -372,7 +530,7 @@
 							<a class="text-decoration-none text-white" href="#">contact us</a>
 						</p>
 					</div>
-					<div class="col-3">
+					<div class="col-lg-3">
 						<h6 class="up">
 							<a class="text-decoration-none text-white" href="#">categories</a>
 						</h6>
@@ -393,25 +551,33 @@
 							<a class="text-decoration-none text-white" href="#">party dresses</a>
 						</p>
 					</div>
-					<div class="col-3">
+					<div class="col-lg-3">
 						<h6>
 							<a>The good stuff in your inbox</a>
 						</h6>
 						<p>News & updates from Anna Store.<br>No spam, we primise.</p>
 						<h5 class="sign-up text-end">SIGN UP <i class="fa fa-angle-right" aria-hidden="true"></i></h5>
 						<div class="footer-bor"></div>
-						<div class="footer-icon">
-							<i class="fa fa-twitter rounded-circle" aria-hidden="true"></i>
-							<i class="fa fa-dribbble rounded-circle" aria-hidden="true"></i>
-							<i class="fa fa-behance rounded-circle" aria-hidden="true"></i>
-							<i class="fa fa-instagram rounded-circle" aria-hidden="true"></i>
+						<div class="footer-icon d-flex">
+							<a class="d-flex justify-content-center align-items-center text-decoration-none rounded-pill" href="#">
+								<i class="fa fa-twitter rounded-circle text-white" aria-hidden="true"></i>
+							</a>
+							<a class="d-flex justify-content-center align-items-center text-decoration-none rounded-pill" href="#">
+								<i class="fa fa-dribbble rounded-circle text-white" aria-hidden="true"></i>
+							</a>
+							<a class="d-flex justify-content-center align-items-center text-decoration-none rounded-pill" href="#">
+								<i class="fa fa-behance rounded-circle text-white" aria-hidden="true"></i>
+							</a>
+							<a class="d-flex justify-content-center align-items-center text-decoration-none rounded-pill" href="#">
+								<i class="fa fa-instagram rounded-circle text-white" aria-hidden="true"></i>
+							</a>
 						</div>
 					</div>
 				</div>
-				<div class="border-top"></div>
+				<div class="footer-bor-bottom"></div>
 				<div class="row align-items-center">
 					<div class="col">
-						<p>Website by Famithemes. Copyright Evelandshop</p>
+						<p class="pt-4">Website by Famithemes. Copyright Evelandshop</p>
 					</div>
 					<div class="col text-end">
 						<img src="img/paypal-curved-128px-copy.png" alt="last img">
@@ -421,12 +587,13 @@
 		</footer>
 		<!-- script bootstrap -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<!--jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>></script>
 		<!--font awesome-->
 		<script src="https://use.fontawesome.com/d346f035ed.js"></script>
 		<!--script slick-->
-		
-		<!--jquery-->
-		
+		<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<!-- script js -->
 		<script src="script.js"></script>
 	</body>
 </html>

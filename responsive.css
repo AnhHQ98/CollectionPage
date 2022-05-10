@@ -1,0 +1,26 @@
+@media (min-width:1450px){
+    .container {
+        max-width: 1400px;
+    }
+}
+@media (min-width:1650px){
+    header .container{
+        max-width: 1640px;
+    }
+}
+@media (min-width:993px) {
+    header .nav-item-svg-1{
+        display: block;
+    }
+    header .nav-item-svg-2{
+        display: none;
+    }
+}
+@media (max-width:992px){
+    header .nav-item-svg-1{
+        display: none;
+    }
+    header .nav-item-svg-2{
+        display: block;
+    }
+}
